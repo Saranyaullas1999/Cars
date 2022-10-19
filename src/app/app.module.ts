@@ -8,7 +8,7 @@ import { AddcarsComponent } from './addcars/addcars.component';
 import { RouterModule,Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { ViewcarComponent } from './viewcar/viewcar.component';
-
+import {HttpClientModule} from '@angular/common/http'
 
 const appRoutes:Routes=[
   {
@@ -29,7 +29,8 @@ const appRoutes:Routes=[
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
