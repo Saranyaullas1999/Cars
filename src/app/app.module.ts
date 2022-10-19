@@ -7,18 +7,23 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AddcarsComponent } from './addcars/addcars.component';
 import { RouterModule,Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { ViewcarComponent } from './viewcar/viewcar.component';
 
 
 const appRoutes:Routes=[
   {
     path:"",component:AddcarsComponent
+  },
+  {
+    path:"view",component:ViewcarComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    AddcarsComponent
+    AddcarsComponent,
+    ViewcarComponent
   ],
   imports: [
     BrowserModule,
