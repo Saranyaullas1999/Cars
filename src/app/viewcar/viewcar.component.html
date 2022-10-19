@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Car Name</th>
+                    <th scope="col">Year</th>
+                    <th scope="col">Colour</th>
+                    <th scope="col">Price</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of carsData">
+                    <td>{{i.id}}</td>
+                    <td>{{i.name}}</td>
+                    <td>{{i.year}}</td>
+                    <td>{{i.color}}</td>
+                    <td>{{i.price}}</td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
